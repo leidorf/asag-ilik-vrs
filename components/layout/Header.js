@@ -10,12 +10,12 @@ const Header = () => {
             href="/"
             className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
-            <img className="bi me-2" src="/assets/imgs/logo.png"></img>
+            <img className="bi me-2" src="/assets/imgs/logo.png" style={{width: "45px" }} ></img>
             <span className="fs-4 text-primary-emphasis">Ses Tanıma Sistemi</span>
           </Link>
 
           <ul className="nav nav-pills">
-            <li className="nav-link">
+            <li className="nav-link ">
               <Link href="/" className="nav-link active">
                 Ana Sayfa
               </Link>

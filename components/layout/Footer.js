@@ -13,7 +13,10 @@ const Footer = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link href="/voice-recognition" class="nav-link px-2 text-primary-emphasis">
+              <Link
+                href="/voice-recognition"
+                class="nav-link px-2 text-primary-emphasis"
+              >
                 Ses Tanıma
               </Link>
             </li>
@@ -28,9 +31,22 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <p class="text-center text-body-secondary">
-            &copy; 2024 asag-ilik-vrs
-          </p>
+          <div className="container text-center">
+            <p class="text-body-secondary">
+              &copy; 2024 asag-ilik-vrs
+            </p>
+            <Link
+              className="text-body-secondary"
+              href="https://github.com/leidorf/asag-ilik-vrs"
+              target="_blank"
+            >
+              <img
+                className="bi"
+                src="/assets/imgs/github.jpeg"
+                style={{ width: "19px" }}
+              ></img>
+            </Link>
+          </div>
         </footer>
       </div>
     </>

@@ -1,6 +1,0 @@
-streamlit
-pyaudio
-numpy
-librosa
-tensorflow
-matplotlib

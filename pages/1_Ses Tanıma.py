@@ -44,10 +44,18 @@ def process_audio():
 def display_results():
     st.write("Tahmin edilen ses:", st.session_state['prediction'])
     st.write("Tanınan Metin:", st.session_state['recognized_text'])
-
+    
+    # Toplam kelime sayısını hesapla
+    if st.session_state['recognized_text']:
+        kelime_sayısı = len(st.session_state['recognized_text'].split())
+        st.write("Toplam Kelime:", kelime_sayısı)
+    else:
+        st.write("Toplam Kelime: 0")
+    
     if st.session_state['recordings']:
         combined_recording = np.concatenate(st.session_state['recordings'])
         plot_audio_waveform(combined_recording, fs=44100)
+
 
 # Main function to run the Streamlit app
 def main():
@@ -83,4 +91,3 @@ def main():
 # Run the main function
 if __name__ == "__main__":
     main()
-
